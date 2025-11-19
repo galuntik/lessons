@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+[type="submit"] {
+    cursor: pointer;
+}
+
+:root {
+    --main-font: "Fraunces", serif;
+    --second-font: "Inter", serif;
+}
