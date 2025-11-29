@@ -1,25 +1,79 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    outline: 0;
+
+.root {
+    background-color: #F1F8FC;
 }
 
-li {
-    list-style: none;
+.card {
+    position: relative;
+    display: flex;
+    width: 293px;
+    height: 361px;
+
+    border-radius: 13px;
+    overflow: hidden;
 }
 
-a {
-    text-decoration: none;
+
+.card__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 349px;
+    background-position: center 48px;
+    background-repeat: no-repeat;
+    z-index: 1;
 }
 
-button,
-[type="submit"] {
-    cursor: pointer;
+.card__hover-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mask: radial-gradient(circle 125px at center 40%, transparent 125px, black 125px);
+    background-image: linear-gradient(#F1F8FC);
+    z-index: 2;
+    
+}
+.card__hover-wrapper::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 18px;
+    z-index: 27;
+    width: 251px;
+    height: 251px;
+    border: 1px solid transparent;
+    left: 20px;
 }
 
-:root {
-    --main-font: "Fraunces", serif;
-    --second-font: "Inter", serif;
+
+.card:hover .card__hover-wrapper::before  {
+    border: 1px solid #fff;
+}
+
+.card__content {
+    margin-top: auto;
+    padding: 15px 30px;
+    z-index: 10;
+    color: #194F94
+}
+.card__title_lvl {
+    color: #5F5F5F
+}
+
+.card:hover .card__content,
+.card:hover .card__title_lvl {
+    color: #fff
+}
+
+.card:hover {
+    background-image: linear-gradient(72.44deg, rgba(0, 39, 123, 0.7) 0%, rgba(5, 83, 177, 0.7) 100%);
+}
+
+.card:hover .card__hover-wrapper {
+    mask: radial-gradient(circle 125px at center 40%, transparent 125px, black 125px);
+    background-image: linear-gradient(72.44deg, rgba(0, 39, 123, 0.7) 0%, rgba(5, 83, 177, 0.7) 100%);
 }
