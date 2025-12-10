@@ -3,78 +3,188 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/section.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>hw_6</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <title>project_1</title>
   </head>
-  <body>
-    <section class="features">
-      <div class="features__container">
-        <h2 class="features__title">Some of the features that make Thalby guides unique</h2>
-        <ul class="features-list">
-          <li class="features-list__item">
-            <div class="features-list__symbol features-list__symbol_color-1"></div>
-            <p class="features-list__name">Written by locals</p>
+  <body class="root">
+    <section class="header">
+      <div class="header__container">
+        <div class="header__nav">
+          <div class="header__logo">
+            <img class="header__logo-img" src="./img/logo.svg" alt="Madimix" />
+            Madimix
+          </div>
+          <div class="header__navigation">
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item">Project’s</li>
+              <li class="header__navigation-item">
+                <span class="header__navigation-item-name">Share’s</span>
+                <span class="header__navigation-sub-item-icon">
+                  <svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.5 4C3.41982 4 3.34365 3.98562 3.27148 3.95686C3.19932 3.9281 3.13384 3.88497 3.07504 3.82745L0.172479 0.988235C0.0548796 0.873203 -0.00258362 0.734641 8.90903e-05 0.572549C0.0027618 0.410458 0.0628977 0.27451 0.180497 0.164706C0.298096 0.054902 0.438413 0 0.601448 0C0.764484 0 0.902128 0.054902 1.01438 0.164706L3.5 2.59608L5.98562 0.164706C6.09787 0.054902 6.23552 0 6.39855 0C6.56159 0 6.7019 0.054902 6.8195 0.164706C6.9371 0.27451 6.99724 0.410458 6.99991 0.572549C7.00258 0.734641 6.94512 0.873203 6.82752 0.988235L3.92496 3.82745C3.86616 3.88497 3.80068 3.9281 3.72852 3.95686C3.65635 3.98562 3.58018 4 3.5 4Z"
+                      fill="#E3E3E3"
+                    />
+                  </svg>
+                </span>
+                <ul class="header__navigation-sub-list">
+                  <li class="header__navigation-sub-item">Test</li>
+                </ul>
+              </li>
+              <li class="header__navigation-item">
+                <span class="header__navigation-item-name">More</span>
+                <span class="header__navigation-sub-item-icon">
+                  <svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.5 4C3.41982 4 3.34365 3.98562 3.27148 3.95686C3.19932 3.9281 3.13384 3.88497 3.07504 3.82745L0.172479 0.988235C0.0548796 0.873203 -0.00258362 0.734641 8.90903e-05 0.572549C0.0027618 0.410458 0.0628977 0.27451 0.180497 0.164706C0.298096 0.054902 0.438413 0 0.601448 0C0.764484 0 0.902128 0.054902 1.01438 0.164706L3.5 2.59608L5.98562 0.164706C6.09787 0.054902 6.23552 0 6.39855 0C6.56159 0 6.7019 0.054902 6.8195 0.164706C6.9371 0.27451 6.99724 0.410458 6.99991 0.572549C7.00258 0.734641 6.94512 0.873203 6.82752 0.988235L3.92496 3.82745C3.86616 3.88497 3.80068 3.9281 3.72852 3.95686C3.65635 3.98562 3.58018 4 3.5 4Z"
+                      fill="#E3E3E3"
+                    />
+                  </svg>
+                </span>
+                <ul class="header__navigation-sub-list">
+                  <li class="header__navigation-sub-item">Test</li>
+                </ul>
+              </li>
+              <li class="header__navigation-item">Support</li>
+              <li class="header__navigation-item">Contact Us</li>
+            </ul>
+          </div>
+          <div class="header__registration">
+            <button class="btn">Log in</button>
+            <button class="btn btn_active">Register</button>
+          </div>
+        </div>
+        <div class="header__title">
+          <p class="header__title-description">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="6" cy="6" r="6" fill="#00FF0D" fill-opacity="0.25" />
+              <circle cx="6" cy="6" r="2" fill="#00FF0D" />
+            </svg>
+            <span class="header__title-description-txt">Streamline operations, enhance productivity</span>
+          </p>
+          <h1 class="header__title-description-slogan">Empowering Your Business with Smart Solutions</h1>
+          <div class="btn-group">
+            <button class="btn">Get Started</button>
+            <button class="btn">About Company</button>
+          </div>
+        </div>
+        <div class="header__subtitle">
+          <p class="header__subtitle-txt">
+            We are proud to have supported startups, SMEs, and enterprises across industries in their growth journeys.
+          </p>
+        </div>
+
+        <div class="header__support-icons">
+          <img src="./img/vector_1.svg" alt="vector_1" />
+          <img src="./img/icon_1.svg" alt="icon_1" />
+          <img src="./img/icon_2.svg" alt="icon_2" />
+          <img src="./img/icon_3.svg" alt="icon_3" />
+          <img src="./img/icon_4.svg" alt="icon_4" />
+          <img src="./img/icon_5.svg" alt="icon_5" />
+        </div>
+        <div class="header__support">
+          <img class="header__support-img" src="./img/vector_2.svg" alt="vector_2" />
+          <p class="header__support-txt">We support 100+ company's in 1 year</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="workflow">
+      <div class="workflow__container">
+        <h2 class="workflow__title">A clear, collaborative workflow</h2>
+        <ul class="workflow__cards">
+          <li class="workflow__cards-item">
+            <img class="workflow__cards-item-img" src="./img/workflow/card_1.png" alt="Discover & Understand" />
+            <div class="workflow__cards-item-content">
+              <p class="workflow__cards-item-title">1. Discover & Understand</p>
+              <p class="workflow__cards-item-description">
+                We begin by understanding your business, goals, and challenges through detailed discussions and
+                research.
+              </p>
+              <a class="workflow__cards-item-link" href="#">Discover</a>
+            </div>
           </li>
-          <li class="features-list__item">
-            <div class="features-list__symbol features-list__symbol_color-2"></div>
-            <p class="features-list__name">Packed with insight</p>
+          <li class="workflow__cards-item">
+            <img class="workflow__cards-item-img" src="./img/workflow/card_2.png" alt="Design & Develop" />
+            <div class="workflow__cards-item-content">
+              <p class="workflow__cards-item-title">2. Design & Develop</p>
+              <p class="workflow__cards-item-description">
+                Our team designs intuitive, scalable solutions and develops them with precision to match your needs.
+              </p>
+              <a class="workflow__cards-item-link" href="#">Discover</a>
+            </div>
           </li>
-          <li class="features-list__item">
-            <div class="features-list__symbol features-list__symbol_color-3"></div>
-            <p class="features-list__name">Interviews with diverse voices</p>
+          <li class="workflow__cards-item">
+            <img class="workflow__cards-item-img" src="./img/workflow/card_3.png" alt="Discover & Understand" />
+            <div class="workflow__cards-item-content">
+              <p class="workflow__cards-item-title">3. Discover & Understand</p>
+              <p class="workflow__cards-item-description">
+                We conduct thorough testing to ensure seamless functionality before launching your solution confidently.
+              </p>
+              <a class="workflow__cards-item-link" href="#">Discover</a>
+            </div>
           </li>
-          <li class="features-list__item">
-            <div class="features-list__symbol features-list__symbol_color-4"></div>
-            <p class="features-list__name">Key facts and etiquette tips</p>
-          </li>
-          <li class="features-list__item">
-            <div class="features-list__symbol features-list__symbol_color-5"></div>
-            <p class="features-list__name">A concise 1-hour read</p>
-          </li>
-          <li class="features-list__item">
-            <div class="features-list__symbol features-list__symbol_color-6"></div>
-            <p class="features-list__name">Instant digital access</p>
+          <li class="workflow__cards-item">
+            <img class="workflow__cards-item-img" src="./img/workflow/card_4.png" alt="Support & Optimize" />
+            <div class="workflow__cards-item-content">
+              <p class="workflow__cards-item-title">4. Support & Optimize</p>
+              <p class="workflow__cards-item-description">
+                Post-launch, we provide ongoing support and continuous optimization to keep your business ahead.
+              </p>
+              <a class="workflow__cards-item-link" href="#">Discover</a>
+            </div>
           </li>
         </ul>
       </div>
     </section>
-    <section class="cards">
-      <div class="cards__container">
-        <h3 class="cards__title">Each Thalby guide includes interviews with a range of fascinating voices, such as</h3>
-        <ul class="cards-list">
-            <li class="cards-list__item">
-                <img class="cards-list__image" alt="Camille Muller," src="img/img_1.png">
-                <div class="cards-list__content">
-                    <p class="cards-list__txt">"I don’t like things to be conventional. If it’s too nice, I bring disorder."</p>
-                    <span class="cards-list__name">Camille Muller, Landscape Designer, France</span>
-                    <a class="cards-list__link" href="#">Discover</a>
-                </div>
-            </li>
-             <li class="cards-list__item">
-                <img class="cards-list__image" alt="Camille Muller," src="img/img_2.png">
-                <div class="cards-list__content">
-                    <p class="cards-list__txt">"Magic is not magic in the sense that I can just wish for anything."</p>
-                    <span class="cards-list__name">Sonia Kowalewski, Witch, Germany</span>
-                    <a class="cards-list__link" href="#">Discover</a>
-                </div>
-            </li>
-             <li class="cards-list__item">
-                <img class="cards-list__image" alt="Camille Muller," src="img/img_3.png">
-                <div class="cards-list__content">
-                    <p class="cards-list__txt">"I was eight years old when I entered my first competition. I won it."</p>
-                    <span class="cards-list__name">Lilly Stoephasius, Skateboarder, Germany</span>
-                    <a class="cards-list__link" href="#">Discover</a>
-                </div>
-            </li>
-        </ul>
+
+    <section class="solutions">
+      <div class="solutions__wrap">
+        <div class="solutions__head">
+          <h3 class="solutions__head-title">Management Solution’s</h3>
+          <button class="btn btn_second"></button>
+          <button class="btn_active btn_second-active"></button>
         </div>
+        <div class="solutions__head-img-wrapper">
+          <img class="solutions__head-img" src="./img/solutions/illustration_1.png" alt="Management Solution’s" />
+        </div>
+        <ul class="solutions__foot">
+          <li class="solutions__foot-item">
+            <img class="solutions__foot-item-img" src="./img/solutions/item_1.svg" alt="Project Management" />
+            <span class="solutions__foot-item-title">Project Management</span>
+            <p class="solutions__foot-item-txt">
+              Plan, track, and manage your projects efficiently to ensure timely delivery.
+            </p>
+          </li>
+          <li class="solutions__foot-item">
+            <img class="solutions__foot-item-img" src="./img/solutions/item_1.svg" alt="Project Management" />
+            <span class="solutions__foot-item-title">Project Management</span>
+            <p class="solutions__foot-item-txt">
+              Plan, track, and manage your projects efficiently to ensure timely delivery.
+            </p>
+          </li>
+          <li class="solutions__foot-item">
+            <img class="solutions__foot-item-img" src="./img/solutions/item_1.svg" alt="Project Management" />
+            <span class="solutions__foot-item-title">Project Management</span>
+            <p class="solutions__foot-item-txt">
+              Plan, track, and manage your projects efficiently to ensure timely delivery.
+            </p>
+          </li>
+          <li class="solutions__foot-item">
+            <img class="solutions__foot-item-img" src="./img/solutions/item_1.svg" alt="Project Management" />
+            <span class="solutions__foot-item-title">Project Management</span>
+            <p class="solutions__foot-item-txt">
+              Plan, track, and manage your projects efficiently to ensure timely delivery.
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
   </body>
