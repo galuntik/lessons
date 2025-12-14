@@ -1,36 +1,425 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>HW 3</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/section.css" type="text/css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <script type="module" src="./src/main.js"></script>
+    <title>project_1</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="header__container">
+        <div class="header__nav">
+          <div class="header__logo">
+            <img class="header__logo-img" src="./src/img/header/logo.svg" alt="Madimix" />
+            Madimix
+          </div>
+          <div class="header__navigation">
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item">Projects</li>
+              <li class="header__navigation-item">
+                <details class="header__navigation-details">
+                  <summary class="header__navigation-trigger">
+                    <span class="header__navigation-item-name">Shares</span>
+                    <span class="header__navigation-sub-item-icon">
+                      <svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M3.5 4C3.41982 4 3.34365 3.98562 3.27148 3.95686C3.19932 3.9281 3.13384 3.88497 3.07504 3.82745L0.172479 0.988235C0.0548796 0.873203 -0.00258362 0.734641 8.90903e-05 0.572549C0.0027618 0.410458 0.0628977 0.27451 0.180497 0.164706C0.298096 0.054902 0.438413 0 0.601448 0C0.764484 0 0.902128 0.054902 1.01438 0.164706L3.5 2.59608L5.98562 0.164706C6.09787 0.054902 6.23552 0 6.39855 0C6.56159 0 6.7019 0.054902 6.8195 0.164706C6.9371 0.27451 6.99724 0.410458 6.99991 0.572549C7.00258 0.734641 6.94512 0.873203 6.82752 0.988235L3.92496 3.82745C3.86616 3.88497 3.80068 3.9281 3.72852 3.95686C3.65635 3.98562 3.58018 4 3.5 4Z"
+                          fill="#E3E3E3"
+                        />
+                      </svg>
+                    </span>
+                  </summary>
+                  <ul class="header__navigation-sub-list">
+                    <li class="header__navigation-sub-item">Test</li>
+                  </ul>
+                </details>
+              </li>
+              <li class="header__navigation-item">
+                <details class="header__navigation-details">
+                  <summary class="header__navigation-trigger">
+                    <span class="header__navigation-item-name">More</span>
+                    <span class="header__navigation-sub-item-icon">
+                      <svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M3.5 4C3.41982 4 3.34365 3.98562 3.27148 3.95686C3.19932 3.9281 3.13384 3.88497 3.07504 3.82745L0.172479 0.988235C0.0548796 0.873203 -0.00258362 0.734641 8.90903e-05 0.572549C0.0027618 0.410458 0.0628977 0.27451 0.180497 0.164706C0.298096 0.054902 0.438413 0 0.601448 0C0.764484 0 0.902128 0.054902 1.01438 0.164706L3.5 2.59608L5.98562 0.164706C6.09787 0.054902 6.23552 0 6.39855 0C6.56159 0 6.7019 0.054902 6.8195 0.164706C6.9371 0.27451 6.99724 0.410458 6.99991 0.572549C7.00258 0.734641 6.94512 0.873203 6.82752 0.988235L3.92496 3.82745C3.86616 3.88497 3.80068 3.9281 3.72852 3.95686C3.65635 3.98562 3.58018 4 3.5 4Z"
+                          fill="#E3E3E3"
+                        />
+                      </svg>
+                    </span>
+                  </summary>
+                  <ul class="header__navigation-sub-list">
+                    <li class="header__navigation-sub-item">Test</li>
+                  </ul>
+                </details>
+              </li>
+              <li class="header__navigation-item">Support</li>
+              <li class="header__navigation-item">Contact Us</li>
+            </ul>
+          </div>
+          <div class="header__registration">
+            <button class="btn">Log in</button>
+            <button class="btn btn_active">Register</button>
+          </div>
+          <input type="checkbox" id="burger-toggle" class="header__burger-checkbox" />
+          <label for="burger-toggle" class="burger">
+            <span class="burger__icon"></span>
+            <span class="burger__icon"></span>
+            <span class="burger__icon"></span>
+          </label>
+          <nav class="burger-menu">
+            <ul class="burger-menu__list">
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Shares</a></li>
+              <li><a href="#">More</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
 
-<section class="preview">
-    <div class="preview__container">
-        <div class="preview__content">
-            <h1 class="title">Your everyday tasks, automated.</h1>
-            
-            <p class="text">Whirl lets you design and streamline your everyday tasks and workflows in just a few clicks.</p>
-            
-            <div class="preview__actions">
-                <a class="link link_btn link_mr30" href="#">Book a demo</a>
-                <a class="link link_img" href="#">Learn more
-                    <img class="icon-vector" src="img/Vector.png" alt="link image">
-                </a>
+        <div class="header__title">
+          <p class="header__title-description">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="6" cy="6" r="6" fill="#00FF0D" fill-opacity="0.25" />
+              <circle cx="6" cy="6" r="2" fill="#00FF0D" />
+            </svg>
+            <span class="header__title-description-txt">Streamline operations, enhance productivity</span>
+          </p>
+          <h1 class="header__title-description-slogan">Empowering Your Business with Smart Solutions</h1>
+          <div class="btn-group">
+            <button class="btn">Get Started</button>
+            <button class="btn">About Company</button>
+          </div>
+        </div>
+        <div class="header__subtitle">
+          <p class="header__subtitle-txt">
+            We are proud to have supported startups, SMEs, and enterprises across industries in their growth journeys.
+          </p>
+        </div>
+
+        <div class="header__support-icons">
+          <img src="./src/img/header/vector_1.svg" alt="vector_1" />
+          <a href="#">
+            <img src="./src/img/header/icon_1.svg" alt="icon_1" />
+          </a>
+          <a href="#">
+            <img src="./src/img/header/icon_2.svg" alt="icon_2" />
+          </a>
+          <a href="#"><img src="./src/img/header/icon_3.svg" alt="icon_3" /></a>
+          <a href="#"><img src="./src/img/header/icon_4.svg" alt="icon_4" /></a>
+          <a href="#"><img src="./src/img/header/icon_5.svg" alt="icon_5" /></a>
+        </div>
+        <div class="header__support">
+          <img class="header__support-img" src="./src/img/header/vector_2.svg" alt="vector_2" />
+          <p class="header__support-txt">We support 100+ company's in 1 year</p>
+        </div>
+      </div>
+    </section>
+    <section class="workflow">
+      <div class="workflow__container">
+        <h2 class="workflow__title">A clear, collaborative workflow</h2>
+        <ul class="workflow__cards">
+          <li class="workflow__cards-item">
+            <img class="workflow__cards-item-img" src="./src/img/workflow/card_1.png" alt="Discover & Understand" />
+            <div class="workflow__cards-item-content">
+              <p class="workflow__cards-item-title">1. Discover & Understand</p>
+              <p class="workflow__cards-item-description">
+                We begin by understanding your business, goals, and challenges through detailed discussions and
+                research.
+              </p>
+              <a class="workflow__cards-item-link" href="#">Discover</a>
             </div>
+          </li>
+          <li class="workflow__cards-item">
+            <img class="workflow__cards-item-img" src="./src/img/workflow/card_2.png" alt="Design & Develop" />
+            <div class="workflow__cards-item-content">
+              <p class="workflow__cards-item-title">2. Design & Develop</p>
+              <p class="workflow__cards-item-description">
+                Our team designs intuitive, scalable solutions and develops them with precision to match your needs.
+              </p>
+              <a class="workflow__cards-item-link" href="#">Discover</a>
+            </div>
+          </li>
+          <li class="workflow__cards-item">
+            <img class="workflow__cards-item-img" src="./src/img/workflow/card_3.png" alt="Discover & Understand" />
+            <div class="workflow__cards-item-content">
+              <p class="workflow__cards-item-title">3. Discover & Understand</p>
+              <p class="workflow__cards-item-description">
+                We conduct thorough testing to ensure seamless functionality before launching your solution confidently.
+              </p>
+              <a class="workflow__cards-item-link" href="#">Discover</a>
+            </div>
+          </li>
+          <li class="workflow__cards-item">
+            <img class="workflow__cards-item-img" src="./src/img/workflow/card_4.png" alt="Support & Optimize" />
+            <div class="workflow__cards-item-content">
+              <p class="workflow__cards-item-title">4. Support & Optimize</p>
+              <p class="workflow__cards-item-description">
+                Post-launch, we provide ongoing support and continuous optimization to keep your business ahead.
+              </p>
+              <a class="workflow__cards-item-link" href="#">Discover</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="solutions">
+      <div class="solutions__wrap">
+        <div class="solutions__head">
+          <h3 class="solutions__head-title">Management Solution’s</h3>
+          <button class="btn btn_second">Get Started</button>
+          <button class="btn btn_second btn_second-active">Book Demo</button>
         </div>
-        <div class="preview__img-container">
-            <img class="preview__img" src="img/IMAGE.png" alt="preview image">
+        <div class="solutions__head-img-wrapper">
+          <img class="solutions__head-img" src="./src/img/solutions/illustration_1.png" alt="Management Solution’s" />
         </div>
-    </div>
-</section>    
-    
-</body>
+        <ul class="solutions__foot">
+          <li class="solutions__foot-item">
+            <div class="solutions__foot-item-name">
+              <img class="solutions__foot-item-img" src="./src/img/solutions/item_1.svg" alt="Project Management" />
+              <span class="solutions__foot-item-title">Project Management</span>
+            </div>
+            <p class="solutions__foot-item-txt">
+              Plan, track, and manage your projects efficiently to ensure timely delivery.
+            </p>
+          </li>
+          <li class="solutions__foot-item">
+            <div class="solutions__foot-item-name">
+              <img class="solutions__foot-item-img" src="./src/img/solutions/item_2.svg" alt="Project Management" />
+              <span class="solutions__foot-item-title">Client Management</span>
+            </div>
+            <p class="solutions__foot-item-txt">
+              Build stronger client relationships with organized communication and workflow tracking.
+            </p>
+          </li>
+          <li class="solutions__foot-item">
+            <div class="solutions__foot-item-name">
+              <img class="solutions__foot-item-img" src="./src/img/solutions/item_3.svg" alt="Project Management" />
+              <span class="solutions__foot-item-title">Team Collaboration</span>
+            </div>
+            <p class="solutions__foot-item-txt">
+              Enable seamless collaboration and communication across your team for higher productivity.
+            </p>
+          </li>
+          <li class="solutions__foot-item">
+            <div class="solutions__foot-item-name">
+              <img class="solutions__foot-item-img" src="./src/img/solutions/item_4.svg" alt="Project Management" />
+              <span class="solutions__foot-item-title">Operations Management</span>
+            </div>
+            <p class="solutions__foot-item-txt">
+              Optimize daily business operations to reduce manual tasks and improve efficiency.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="testimonial">
+      <div class="testimonial__container">
+        <h4 class="testimonial__title">What Our Clients Say</h4>
+        <div class="testimonial__cards">
+          <ul class="testimonial__cards-items">
+            <li class="testimonial__cards-item">
+              <p class="testimonial__cards-item-txt">
+                “Their expertise in business automation helped us reduce manual tasks, improve efficiency, and scale
+                confidently.”
+              </p>
+              <div class="testimonial__cards-item-content">
+                <div class="testimonial__cards-item-info">
+                  <img class="testimonial__cards-item-img" src="./src/img/testimonial/image_1.png" alt="Ankit" />
+                  <div class="testimonial__cards-item-position">
+                    <span class="testimonial__cards-item-name">Rick S., CEO</span>
+                    <span class="testimonial__cards-item-company">GreenFuture</span>
+                  </div>
+                </div>
+                <a href="#" class="testimonial__cards-item-icon">
+                  <img src="./src/img/testimonial/icon_1.svg" alt="" />
+                </a>
+              </div>
+            </li>
+            <li class="testimonial__cards-item">
+              <p class="testimonial__cards-item-txt">
+                “The team truly understood our challenges and provided a seamless solution that improved our workflow
+                and client management.”
+              </p>
+              <div class="testimonial__cards-item-content">
+                <div class="testimonial__cards-item-info">
+                  <img class="testimonial__cards-item-img" src="./src/img/testimonial/image_2.png" alt="Ankit" />
+                  <div class="testimonial__cards-item-position">
+                    <span class="testimonial__cards-item-name">Andrew M., Founder</span>
+                    <span class="testimonial__cards-item-company">TechNova</span>
+                  </div>
+                </div>
+                <a href="#" class="testimonial__cards-item-icon">
+                  <img src="./src/img/testimonial/icon_1.svg" alt="" />
+                </a>
+              </div>
+            </li>
+            <li class="testimonial__cards-item">
+              <p class="testimonial__cards-item-txt">
+                “Their expertise in business automation helped us reduce manual tasks, improve efficiency, and scale
+                confidently.”
+              </p>
+              <div class="testimonial__cards-item-content">
+                <div class="testimonial__cards-item-info">
+                  <img class="testimonial__cards-item-img" src="./src/img/testimonial/image_3.png" alt="Ankit" />
+                  <div class="testimonial__cards-item-position">
+                    <span class="testimonial__cards-item-name">Rick S., CEO</span>
+                    <span class="testimonial__cards-item-company">GreenFuture</span>
+                  </div>
+                </div>
+                <a href="#" class="testimonial__cards-item-icon">
+                  <img src="./src/img/testimonial/icon_1.svg" alt="" />
+                </a>
+              </div>
+            </li>
+            <li class="testimonial__cards-item">
+              <p class="testimonial__cards-item-txt">
+                “The team truly understood our challenges and provided a seamless solution that improved our workflow
+                and client management.”
+              </p>
+              <div class="testimonial__cards-item-content">
+                <div class="testimonial__cards-item-info">
+                  <img class="testimonial__cards-item-img" src="./src/img/testimonial/image_4.png" alt="Ankit" />
+                  <div class="testimonial__cards-item-position">
+                    <span class="testimonial__cards-item-name">Andrew M., Founder</span>
+                    <span class="testimonial__cards-item-company">TechNova</span>
+                  </div>
+                </div>
+                <a href="#" class="testimonial__cards-item-icon">
+                  <img src="./src/img/testimonial/icon_1.svg" alt="" />
+                </a>
+              </div>
+            </li>
+            <li class="testimonial__cards-item">
+              <p class="testimonial__cards-item-txt">
+                “Their expertise in business automation helped us reduce manual tasks, improve efficiency, and scale
+                confidently.”
+              </p>
+              <div class="testimonial__cards-item-content">
+                <div class="testimonial__cards-item-info">
+                  <img class="testimonial__cards-item-img" src="./src/img/testimonial/image_5.png" alt="Ankit" />
+                  <div class="testimonial__cards-item-position">
+                    <span class="testimonial__cards-item-name">Rick S., CEO</span>
+                    <span class="testimonial__cards-item-company">GreenFuture</span>
+                  </div>
+                </div>
+                <a href="#" class="testimonial__cards-item-icon">
+                  <img src="./src/img/testimonial/icon_1.svg" alt="" />
+                </a>
+              </div>
+            </li>
+            <li class="testimonial__cards-item">
+              <p class="testimonial__cards-item-txt">
+                “The team truly understood our challenges and provided a seamless solution that improved our workflow
+                and client management.”
+              </p>
+              <div class="testimonial__cards-item-content">
+                <div class="testimonial__cards-item-info">
+                  <img class="testimonial__cards-item-img" src="./src/img/testimonial/image_6.png" alt="Ankit" />
+                  <div class="testimonial__cards-item-position">
+                    <span class="testimonial__cards-item-name">Andrew M., Founder</span>
+                    <span class="testimonial__cards-item-company">TechNova</span>
+                  </div>
+                </div>
+                <a href="#" class="testimonial__cards-item-icon">
+                  <img src="./src/img/testimonial/icon_1.svg" alt="" />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="fag">
+      <div class="fag__container">
+        <h5 class="fag__title">Your Questions, Answered</h5>
+        <div class="fag__accordion-items">
+          <details class="fag__accordion-item">
+            <summary class="fag__accordion-item-title">What industries do you serve?</summary>
+            <div class="fag__accordion-item-content">
+              We serve a wide range of industries including technology, retail, healthcare, logistics, education, and
+              professional services.
+            </div>
+          </details>
+          <details class="fag__accordion-item">
+            <summary class="fag__accordion-item-title">Do you provide custom solutions?</summary>
+            <div class="fag__accordion-item-content">
+              Yes, we specialize in creating custom solutions tailored to your specific business needs. Our team works
+              closely with you to understand your goals, challenges, and requirements, ensuring the final solution fits
+              seamlessly into your workflow.
+            </div>
+          </details>
+          <details class="fag__accordion-item">
+            <summary class="fag__accordion-item-title">How do we get started with your services?</summary>
+            <div class="fag__accordion-item-content">
+              Getting started is simple. Reach out to us through our contact form, and we’ll schedule an initial
+              consultation to discuss your needs. From there, we’ll outline the next steps, timelines, and a clear plan
+              to move forward.
+            </div>
+          </details>
+          <details class="fag__accordion-item">
+            <summary class="fag__accordion-item-title">Do you provide support after project completion?</summary>
+            <div class="fag__accordion-item-content">
+              Absolutely. We offer ongoing support and maintenance after project completion to ensure everything runs
+              smoothly. Whether it’s updates, improvements, or technical assistance, our team is available to help as
+              your business grows.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer__container">
+        <div class="footer__menu">
+          <div class="footer__main">
+            <div class="footer__main-logo">
+              <img class="footer__main-logo-img" src="./src/img/footer/icon_1.svg" alt="Madimix" />
+              Madimix
+            </div>
+            <p class="footer__main-txt">
+              Your growth is our priority, and we measure our success through your achievements.
+            </p>
+          </div>
+          <div class="footer__navigation">
+            <div class="footer__navigation-item">
+              <h6 class="footer__navigation-item-title">Services</h6>
+              <ul class="footer__navigation-item-links">
+                <li class="footer__navigation-item-link"><a class="footer__link" href="#">Website</a></li>
+                <li class="footer__navigation-item-link"><a class="footer__link" href="#">Application</a></li>
+                <li class="footer__navigation-item-link"><a class="footer__link" href="#">Software</a></li>
+                <li class="footer__navigation-item-link"><a class="footer__link" href="#">Plugin</a></li>
+                <li class="footer__navigation-item-link"><a class="footer__link" href="#">Tools</a></li>
+              </ul>
+            </div>
+            <div class="footer__navigation-item">
+              <h6 class="footer__navigation-item-title">Social Media</h6>
+              <ul class="footer__navigation-item-links">
+                <li class="footer__navigation-item-link"><a class="footer__link" href="#">Facebook</a></li>
+                <li class="footer__navigation-item-link"><a class="footer__link" href="#">Instagram</a></li>
+                <li class="footer__navigation-item-link"><a class="footer__link" href="#">LinkedIn</a></li>
+                <li class="footer__navigation-item-link"><a class="footer__link" href="#">Twitter</a></li>
+              </ul>
+            </div>
+            <div class="footer__navigation-item">
+              <h6 class="footer__navigation-item-title">Legal</h6>
+              <ul class="footer__navigation-item-links">
+                <li class="footer__navigation-item-link"><a class="footer__link" href="#">Privacy</a></li>
+                <li class="footer__navigation-item-link"><a class="footer__link" href="#">Terms</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">©Madimix all rights reserved</div>
+      </div>
+    </section>
+  </body>
 </html>

@@ -1,0 +1,31 @@
+.btn {
+  padding: 8px 22px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+
+  &:hover,
+  &:active {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+  }
+
+  &_second {
+    background-color: #e3e3e3;
+    color: #000000;
+    &:hover,
+    &:active {
+      background-color: #2c3cf1;
+      color: #ffffff;
+      backdrop-filter: blur(12px);
+    }
+  }
+}
+
+//    <button class="btn "></button>
+//       <button class="btn_active btn_second-active"></button>

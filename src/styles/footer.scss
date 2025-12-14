@@ -1,0 +1,112 @@
+.footer {
+  background-color: #f1f1f1;
+  &__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 40px;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0%;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  &__main {
+    max-width: 302px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+  }
+  &__main-logo {
+    max-width: 95px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__main-logo-img {
+    width: 19px;
+    height: 19px;
+  }
+  &__main-logo-txt {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__navigation {
+    max-width: 630px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  &__navigation-item {
+    margin-bottom: auto;
+  }
+  &__navigation-item-title {
+    margin-bottom: 21px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  &__navigation-item-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__link {
+    color: #000000bf;
+  }
+  &__copyright {
+    text-align: center;
+    padding: 20px 0px;
+    color: #757575;
+    font-size: 18;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__navigation {
+      max-width: 310px;
+    }
+    &__navigation-item-title {
+      margin-bottom: 13px;
+      font-size: 16px;
+    }
+    &__menu {
+      padding: 23px 0px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__container {
+      padding: 10px 40px 20px;
+    }
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__main {
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    &__main-txt {
+      font-size: 14px;
+    }
+    &__main-logo {
+      font-size: 16px;
+    }
+    &__copyright {
+      padding: 0px;
+      font-size: 11px;
+    }
+  }
+}

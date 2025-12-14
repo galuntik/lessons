@@ -1,0 +1,30 @@
+.solutions {
+  position: relative;
+}
+
+.solutions::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: radial-gradient(50% 50% at 50% 50%, #dce2ff 0%, #f9fdff 100%);
+  z-index: -1;
+}
+
+.solutions__head-title {
+  font-size: 58px;
+  font-weight: 400;
+}
+
+.solutions__head-img-wrapper {
+  width: 467px;
+  height: 445px;
+  margin: 0 auto;
+}
+
+.solutions__head-img {
+  width: 100%;
+  height: auto;
+}
