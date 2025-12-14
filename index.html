@@ -3,8 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HW</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <title>hw_7</title>
     <script type="module" src="./src/main.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Close"></button>
+        <h2 class="modal__title">Нужна помощь с подбором</h2>
+        <form class="form">
+          <div class="form__field">
+            <label class="form__label">Ф.И.О.*</label>
+            <input type="text" class="form__input" />
+          </div>
+          <div class="form__field">
+            <label class="form__label">Электронная почта*</label>
+            <input type="email" class="form__input" />
+          </div>
+          <div class="form__field">
+            <label class="form__label">Контактный телефон*</label>
+            <input type="tel" class="form__input" />
+          </div>
+          <div class="form__field">
+            <label class="form__label">Комментарий</label>
+            <textarea class="form__textarea"></textarea>
+          </div>
+          <div class="form__bottom">
+            <label class="form__checkbox">
+              <input type="checkbox" />
+              <span class="form__checkmark"></span>
+              <span class="form__checkbox-text">
+                Я соглашаюсь с условиями
+                <a href="#">политики конфиденциальности</a>
+              </span>
+            </label>
+            <button type="submit" class="form__submit">ОТПРАВИТЬ</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
