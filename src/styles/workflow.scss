@@ -2,21 +2,21 @@
   &__container {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 80px 40px;
+    padding: 80px 40px 0px;
   }
 
   &__title {
-    max-width: 808px;
+    max-width: 700px;
     margin-bottom: 35px;
-    font-size: 77px;
+    font-size: 58px;
     font-weight: 400;
   }
 
   &__cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
     max-width: 1200px;
-    gap: 20px;
+    // gap: 20px;
   }
 
   &__cards-item {
@@ -80,14 +80,27 @@
     }
   }
 }
+
+@media (min-width: 481px) {
+  .workflow {
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+}
 @media (max-width: 480px) {
   .workflow {
     &__container {
-      padding: 35px 20px 20px;
+      padding: 25px 20px 10px;
     }
     &__title {
       margin-bottom: 25px;
-      font-size: 35px;
+      font-size: 25px;
+    }
+    &__cards-item {
+      margin-bottom: 15px;
     }
   }
 }

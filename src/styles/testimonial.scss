@@ -2,16 +2,15 @@
   &__container {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 80px 40px 0px;
   }
   &__title {
     font-size: 58px;
     font-weight: 400;
-    max-width: 580px;
     margin-bottom: 35px;
-    text-align: center;
   }
   &__cards {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
   }
   &__cards-items {
@@ -76,10 +75,10 @@
 @media (max-width: 480px) {
   .testimonial {
     &__container {
-      padding: 10px 40px 40px;
+      padding: 25px 20px 0px;
     }
     &__title {
-      font-size: 35px;
+      font-size: 25px;
       margin-bottom: 20px;
     }
   }
