@@ -1,0 +1,153 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  &__content {
+    position: relative;
+    margin: auto;
+    max-width: 780px;
+    background: #f1f0ed;
+    padding: 64px 80px 80px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 48px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 22px;
+    height: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #ccc;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.form {
+  &__field {
+    margin-bottom: 24px;
+  }
+
+  &__label {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #dcdcdc;
+    background: transparent;
+    padding: 8px 0;
+    font-size: 16px;
+    outline: none;
+  }
+
+  &__textarea {
+    resize: none;
+    height: 48px;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+
+    input {
+      display: none;
+    }
+  }
+
+  &__checkmark {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+
+    &::after {
+      content: "✓";
+      position: absolute;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      color: #e5481d;
+      font-size: 14px;
+    }
+  }
+
+  &__checkbox input:checked + &__checkmark::after {
+    display: flex;
+  }
+
+  &__checkbox-text {
+    font-size: 17px;
+    font-weight: 700;
+
+    a {
+      text-decoration: underline;
+      text-decoration-color: #e5481d;
+      color: #000000;
+    }
+  }
+
+  &__submit {
+    padding: 16px 48px;
+    border: 1px solid #dad6ce;
+    background: transparent;
+    color: #e5481d;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background: #e5481d;
+      color: #fff;
+    }
+  }
+}
