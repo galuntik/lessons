@@ -1,5 +1,5 @@
 
-#To run the project:
+# To run the project:
 
 First, install the dependencies via the terminal:
 bash
